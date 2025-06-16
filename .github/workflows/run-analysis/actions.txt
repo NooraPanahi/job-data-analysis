@@ -1,5 +1,4 @@
 name: Run Job Skill Analyzer
-
 on:
   push:
     branches: [ main ]
