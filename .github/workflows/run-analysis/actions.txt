@@ -1,0 +1,27 @@
+name: Run Job Skill Analyzer
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: pip install --upgrade pip
+
+    - name: Run analysis script
+      run: python job_analysis.py
+      env:
+        PYTHONIOENCODING: utf-8
