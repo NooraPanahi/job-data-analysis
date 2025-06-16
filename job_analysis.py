@@ -47,7 +47,8 @@ def analyze_jobs(csv_file, target_skill):
 
 if __name__ == "__main__":
     # input
-    target_skill = input("Enter skill to search for (ex : 'Python'): ").strip()
+    # target_skill = input("Enter skill to search for (ex : 'Python'): ").strip()
+    target_skill = "Python"   #for using github actions
     
     if not target_skill:
         print("enter a skill to search for.")
