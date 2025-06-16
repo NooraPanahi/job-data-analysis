@@ -1,0 +1,7 @@
+Analysis results for skill 'python':
+Total matching jobs: 3
+
+Matching jobs:
+-Python Developer in Tehran
+-Data Analyst in Mashhad
+-Software Engineer in Guilan
